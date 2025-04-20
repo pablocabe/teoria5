@@ -10,12 +10,18 @@ class Cuenta{
     private static decimal saldoTotal = 0;
     private int ID;
     private decimal saldo;
+    private static List<Cuenta> listaCuentas = new List<Cuenta>();
+    // Punto 3)
+    public static List<Cuenta> Cuentas {
+        get {return new List<Cuenta>(listaCuentas);} // Solo lectura
+    }
 
     public Cuenta (){
         ID = proximoID;
         proximoID++;
         saldo = 0;
         cuentasCreadas++;
+        listaCuentas.Add(this);
         Console.WriteLine($"Se creo la cuenta ID = {ID}");
     }
 
@@ -55,4 +61,11 @@ class Cuenta{
         }
     }
 
+    /* Punto 2)
+        public static List<Cuenta> GetCuentas(){
+        // Devuelve una copia superficial de la lista
+        return new List<Cuenta>(listaCuentas);
+        // Así, si borrás un elemento de la lista devuelta por GetCuentas(), no se borra del listado interno de la clase.
+    }
+    */
 }
