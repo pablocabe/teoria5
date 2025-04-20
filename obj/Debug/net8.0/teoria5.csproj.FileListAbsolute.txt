@@ -12,3 +12,4 @@ c:\Users\pablo\proyectosDonet\teoria5\obj\Debug\net8.0\refint\teoria5.dll
 c:\Users\pablo\proyectosDonet\teoria5\obj\Debug\net8.0\teoria5.pdb
 C:\Users\pablo\proyectosDonet\teoria5\obj\Debug\net8.0\teoria5.genruntimeconfig.cache
 C:\Users\pablo\proyectosDonet\teoria5\obj\Debug\net8.0\ref\teoria5.dll
+c:\Users\pablo\proyectosDonet\teoria5\obj\Debug\net8.0\teoria5.sourcelink.json
